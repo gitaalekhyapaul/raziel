@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="480" viewBox="0 0 820 480" role="img" aria-labelledby="trust-title trust-desc">
+  <title id="trust-title">Raziel trust boundaries</title>
+  <desc id="trust-desc">The data owner keeps private relationships and the witness with the local prover. The agent receives a scoped capability carrying the proof and public claims. The gateway sends the proof and claims to the independent verifier. The verifier checks them against the approved policy, signed snapshot descriptor, and trusted verification key. The gateway uses verified claims and checks the request scope and signature before it permits a protected read.</desc>
+  <defs>
+    <marker id="trust-arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0 0 6 3 0 6Z" fill="#0B5947"/>
+    </marker>
+  </defs>
+  <rect width="820" height="480" fill="#F7FAF8"/>
+  <g font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" fill="#101A17">
+    <text x="28" y="52" font-size="32" font-weight="700">Raziel trust boundaries</text>
+    <text x="28" y="81" font-size="17" fill="#40564E">The owner keeps the witness. Bob's gateway controls the read.</text>
+    <path d="M28 103H792" stroke="#C9D7D0"/>
+
+    <rect x="28" y="116" width="244" height="192" rx="8" fill="#E7F2EC" stroke="#B5CFC2"/>
+    <rect x="522" y="116" width="270" height="192" rx="8" fill="#E7F2EC" stroke="#B5CFC2"/>
+    <g fill="#FFFFFF" stroke="#B5CFC2">
+      <rect x="40" y="154" width="220" height="57" rx="7"/>
+      <rect x="40" y="233" width="220" height="63" rx="7"/>
+      <rect x="534" y="154" width="246" height="76" rx="7"/>
+      <rect x="534" y="246" width="246" height="50" rx="7"/>
+      <rect x="28" y="370" width="244" height="62" rx="7"/>
+    </g>
+    <rect x="522" y="370" width="270" height="62" rx="7" fill="#0B5947"/>
+
+    <g fill="none" stroke="#0B5947" stroke-width="1.6" marker-end="url(#trust-arrow)">
+      <path d="M150 212V229"/>
+      <path d="M657 231V242"/>
+      <path d="M150 297V365"/>
+      <path d="M277 401H516"/>
+      <path d="M550 365V300"/>
+      <path d="M764 297V365"/>
+      <path d="M657 433V448"/>
+    </g>
+
+    <g font-size="17" font-weight="700">
+      <text x="40" y="141" fill="#0B5947">Data owner only</text>
+      <text x="534" y="141" fill="#0B5947">Verifier-visible</text>
+      <text x="53" y="177">Private relationships</text>
+      <text x="53" y="257">Local prover</text>
+      <text x="547" y="177">Trusted inputs</text>
+      <text x="547" y="267">Independent verifier</text>
+      <text x="41" y="394">Agent</text>
+      <text x="535" y="394" fill="#FFFFFF">Bob's gateway</text>
+      <text x="657" y="467" text-anchor="middle" fill="#0B5947">Protected read</text>
+    </g>
+    <g font-size="15" fill="#40564E">
+      <text x="53" y="198">Reviewer assignments</text>
+      <text x="53" y="279">Uses the private witness</text>
+      <text x="547" y="198">Approved policy</text>
+      <text x="547" y="218">Signed snapshot descriptor</text>
+      <text x="547" y="287">Checks proof with trusted key</text>
+      <text x="163" y="344" fill="#0B5947">Proof + public claims</text>
+      <text x="397" y="389" text-anchor="middle" fill="#0B5947">Capability + signed request</text>
+      <text x="562" y="324" fill="#0B5947">Proof + public claims</text>
+      <text x="752" y="353" text-anchor="end" fill="#0B5947">Verified claims</text>
+      <text x="41" y="416">Holds the scoped capability</text>
+      <text x="535" y="416" fill="#FFFFFF">Checks scope + request signature</text>
+    </g>
+  </g>
+</svg>

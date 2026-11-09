@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="500" viewBox="0 0 820 500" role="img" aria-labelledby="arch-title arch-desc">
+  <title id="arch-title">Raziel architecture</title>
+  <desc id="arch-desc">A Go adapter reads the SpiceDB schema for compilation into Rust PolicyIR. Approved policy and signed snapshot records are available through a trusted registry. The owner commits relationship data in a snapshot and builds a private witness. The local prover runs the Rust SP1 guest with approved policy and private witness data. The separate TypeScript SDK receives a proof-backed grant and sends a signed request with the capability. The Next.js gateway uses an independent Rust verifier and checks the request before reading protected data.</desc>
+  <defs>
+    <marker id="arch-arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto-start-reverse">
+      <path d="M0 0 6 3 0 6Z" fill="#0B5947"/>
+    </marker>
+  </defs>
+  <rect width="820" height="500" fill="#F7FAF8"/>
+  <g font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" fill="#101A17">
+    <text x="28" y="52" font-size="32" font-weight="700">Raziel architecture</text>
+    <text x="28" y="81" font-size="17" fill="#40564E">Compile policy, prove permission, and enforce scoped reads.</text>
+    <path d="M28 98H792" stroke="#C9D7D0"/>
+
+    <rect x="20" y="232" width="576" height="113" rx="8" fill="#E7F2EC" stroke="#B5CFC2"/>
+    <g font-size="16" font-weight="700" fill="#0B5947">
+      <text x="28" y="121">01  Policy publishing</text>
+      <text x="28" y="252">02  Owner-side proving</text>
+      <text x="28" y="391">03  Protected read</text>
+    </g>
+    <g fill="#FFFFFF" stroke="#C9D7D0">
+      <rect x="28" y="133" width="172" height="74" rx="7"/>
+      <rect x="222" y="133" width="172" height="74" rx="7"/>
+      <rect x="416" y="133" width="172" height="74" rx="7"/>
+      <rect x="28" y="263" width="172" height="74" rx="7"/>
+      <rect x="222" y="263" width="172" height="74" rx="7"/>
+      <rect x="28" y="402" width="172" height="74" rx="7"/>
+      <rect x="610" y="402" width="182" height="74" rx="7"/>
+    </g>
+    <g fill="#E7F2EC" stroke="#B5CFC2">
+      <rect x="610" y="133" width="182" height="74" rx="7"/>
+      <rect x="610" y="263" width="182" height="74" rx="7"/>
+    </g>
+    <g fill="#0B5947">
+      <rect x="416" y="263" width="172" height="74" rx="7"/>
+      <rect x="416" y="402" width="172" height="74" rx="7"/>
+    </g>
+    <g fill="none" stroke="#0B5947" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arch-arrow)">
+      <path d="M203 170H218"/>
+      <path d="M397 170H412"/>
+      <path d="M591 170H606"/>
+      <path d="M701 208V258"/>
+      <path d="M701 226H502V258"/>
+      <path d="M203 300H218"/>
+      <path d="M397 300H412"/>
+      <path d="M470 338V368H182V397"/>
+      <path d="M204 439H411"/>
+      <path d="M591 439H606"/>
+      <path d="M550 397V376H701V342" marker-start="url(#arch-arrow)"/>
+    </g>
+    <g font-size="17" font-weight="700">
+      <text x="41" y="162">SpiceDB schema</text>
+      <text x="235" y="162">Go adapter</text>
+      <text x="429" y="162">Rust PolicyIR</text>
+      <text x="623" y="154">Trusted registry</text>
+      <text x="41" y="292">Relationships</text>
+      <text x="235" y="292">Snapshot</text>
+      <text x="429" y="292" fill="#FFFFFF">Local prover</text>
+      <text x="623" y="292" font-size="16">Independent verifier</text>
+      <text x="41" y="423">TypeScript SDK</text>
+      <text x="429" y="423" fill="#FFFFFF">Next.js gateway</text>
+      <text x="623" y="431">Protected data</text>
+    </g>
+    <g font-size="15" fill="#40564E">
+      <text x="41" y="185">Rules and caveats</text>
+      <text x="235" y="185">Compiler output</text>
+      <text x="429" y="185">Validate and encode</text>
+      <text x="623" y="175">Approved policy</text>
+      <text x="623" y="194">Signed snapshots</text>
+      <text x="41" y="315">Private owner data</text>
+      <text x="235" y="315">Build private witness</text>
+      <text x="429" y="315" fill="#FFFFFF">Rust SP1 guest</text>
+      <text x="623" y="315">Rust / verifierd</text>
+      <text x="41" y="444">Separate agent client</text>
+      <text x="41" y="463">Signs requests</text>
+      <text x="429" y="444" fill="#FFFFFF">Checks scope and</text>
+      <text x="429" y="463" fill="#FFFFFF">request signature</text>
+      <text x="623" y="454">Read after checks</text>
+      <text x="597" y="220" text-anchor="middle" fill="#0B5947">Approved policy</text>
+      <text x="326" y="360" text-anchor="middle" fill="#0B5947">Proof-backed grant</text>
+      <text x="625" y="368" text-anchor="middle" fill="#0B5947">Proof check</text>
+      <text x="307" y="430" text-anchor="middle" fill="#0B5947">Signed request + capability</text>
+    </g>
+  </g>
+</svg>

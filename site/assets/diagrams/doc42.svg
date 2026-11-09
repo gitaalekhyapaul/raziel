@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="382" viewBox="0 0 820 382" role="img" aria-labelledby="doc42-title doc42-desc">
+  <title id="doc42-title">Doc 42: one request, two outcomes</title>
+  <desc id="doc42-desc">Only assigned reviewers can read Doc 42. Alice is not assigned. In the signed-token-only example, the issuer signs the wrong grant and Alice signs her request. Bob releases the file after the signature, scope, key binding, and freshness checks pass. In the proof-required example, there is no valid ALLOW proof for Alice's exact read, so Bob's gateway withholds the file.</desc>
+  <defs>
+    <marker id="doc42-arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0 0 6 3 0 6Z" fill="#0B5947"/>
+    </marker>
+    <marker id="doc42-wrong-arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0 0 6 3 0 6Z" fill="#9B302E"/>
+    </marker>
+  </defs>
+  <rect width="820" height="382" fill="#F7FAF8"/>
+  <g font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" fill="#101A17">
+    <text x="28" y="52" font-size="32" font-weight="700">Doc 42: one request, two outcomes</text>
+    <text x="28" y="81" font-size="17" fill="#40564E">Only assigned reviewers can read Doc 42. Alice is unassigned.</text>
+    <path d="M28 103H792M28 237H792" stroke="#C9D7D0"/>
+
+    <g font-size="18" font-weight="700">
+      <text x="28" y="130" fill="#9B302E">01</text>
+      <text x="60" y="130">Signed token only</text>
+      <text x="28" y="265" fill="#0B5947">02</text>
+      <text x="60" y="265">Proof required</text>
+    </g>
+    <g fill="#FFFFFF" stroke="#C9D7D0">
+      <rect x="28" y="143" width="172" height="82" rx="7"/>
+      <rect x="222" y="143" width="172" height="82" rx="7"/>
+      <rect x="416" y="143" width="172" height="82" rx="7"/>
+      <rect x="28" y="278" width="172" height="82" rx="7"/>
+      <rect x="222" y="278" width="172" height="82" rx="7"/>
+      <rect x="416" y="278" width="172" height="82" rx="7"/>
+    </g>
+    <rect x="610" y="143" width="182" height="82" rx="7" fill="#F7E7E5" stroke="#D4A5A2"/>
+    <rect x="610" y="278" width="182" height="82" rx="7" fill="#0B5947"/>
+    <g fill="none" stroke-width="1.6">
+      <g stroke="#9B302E" marker-end="url(#doc42-wrong-arrow)">
+        <path d="M203 184H218"/>
+        <path d="M397 184H412"/>
+        <path d="M591 184H606"/>
+      </g>
+      <g stroke="#0B5947" marker-end="url(#doc42-arrow)">
+        <path d="M397 319H412"/>
+        <path d="M591 319H606"/>
+      </g>
+      <path d="m207 315 8 8m0-8-8 8" stroke="#62776E" stroke-linecap="round"/>
+    </g>
+    <g font-size="17" font-weight="700">
+      <text x="41" y="168">Issuer</text>
+      <text x="235" y="168">Alice</text>
+      <text x="429" y="168">Bob's service</text>
+      <text x="623" y="178" fill="#842827">Bob returns Doc 42</text>
+      <text x="41" y="303">Local prover</text>
+      <text x="235" y="303">Alice</text>
+      <text x="429" y="303">Bob's gateway</text>
+      <text x="623" y="313" fill="#FFFFFF">Doc 42 withheld</text>
+    </g>
+    <g font-size="15" fill="#40564E">
+      <text x="41" y="189" fill="#842827">Signs the wrong</text>
+      <text x="41" y="208" fill="#842827">read grant</text>
+      <text x="235" y="189">Sends grant and</text>
+      <text x="235" y="208">signed read request</text>
+      <text x="429" y="189">Signature, scope and</text>
+      <text x="429" y="208">key binding pass</text>
+      <text x="623" y="199" fill="#842827">Wrong grant accepted</text>
+      <text x="41" y="324">No assignment,</text>
+      <text x="41" y="343">no ALLOW proof</text>
+      <text x="235" y="324">Sends the signed</text>
+      <text x="235" y="343">read request</text>
+      <text x="429" y="324">Requires proof for</text>
+      <text x="429" y="343">Alice's exact read</text>
+      <text x="623" y="334" fill="#FFFFFF">No valid ALLOW proof</text>
+    </g>
+  </g>
+</svg>

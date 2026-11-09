@@ -1,0 +1,9 @@
+[submodule "components/backend"]
+	path = components/backend
+	url = https://github.com/gitaalekhyapaul/hypha-backend.git
+[submodule "components/sdk"]
+	path = components/sdk
+	url = https://github.com/gitaalekhyapaul/raziel-sdk-ts.git
+[submodule "components/demo-agents"]
+	path = components/demo-agents
+	url = https://github.com/gitaalekhyapaul/raziel-demo-agents.git

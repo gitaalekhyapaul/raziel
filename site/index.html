@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en-SG">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a17">
+  <meta name="description" content="Raziel gives AI agents proof-backed access to sensitive data for a defined task. A research project at NUS FinTech Lab.">
+  <title>Raziel | Agent Authorisation at Superhuman Scale</title>
+  <link rel="icon" href="assets/brand/logo-symbol-light.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="contact.js" defer></script>
+  <script src="gallery.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="wrap nav">
+      <div class="brand-group">
+        <a class="mark" href="#main" aria-label="Raziel home">
+          <img src="assets/brand/logo-primary-dark.svg" width="132" height="45" alt="Raziel">
+        </a>
+        <div class="lab-mark">
+          <img src="assets/brand/nus-fintech-lab-dark.png" width="1090" height="211" alt="NUS FinTech Lab, School of Computing">
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#how">How it works</a>
+        <a href="#demo">Demo</a>
+        <a href="#partnerships">Discuss a pilot</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/demo/processor-console.png" width="1200" height="900" alt="" fetchpriority="high">
+      <div class="wrap hero-copy">
+        <p class="eyebrow">Raziel / NUS FinTech Lab</p>
+        <h1 id="hero-title">Proof-backed access for AI agents</h1>
+        <p class="intro">Let agents work across services. Give each one a grant for the data it needs, backed by proof that the owner&rsquo;s rule was met.</p>
+        <div class="actions">
+          <a class="button primary" href="#partnerships">Discuss a pilot</a>
+          <a class="button outline" href="https://uvents.nus.edu.sg/event/29th-steps/vote">Vote MCOMP-04</a>
+        </div>
+        <p class="event">29th STePS &nbsp;/&nbsp; Select MComp, then Raziel, on UVents.</p>
+      </div>
+    </section>
+
+    <section class="band" id="how" aria-labelledby="why-title">
+      <div class="wrap">
+        <header class="section-heading">
+          <p class="eyebrow">The problem</p>
+          <h2 id="why-title">A task is not a grant.</h2>
+          <p>Alice is asked to review a project. Bob&rsquo;s service holds Doc 42, which only assigned reviewers can read. A token can carry a valid signature even when the issuer made the wrong access decision. Raziel lets Bob check that the decision follows the rule.</p>
+        </header>
+        <figure class="comparison">
+          <img src="assets/diagrams/doc42.svg" alt="For an unassigned agent, an incorrectly issued signed token can pass routine checks. The proof-required service withholds the file." loading="lazy">
+        </figure>
+        <ol class="steps">
+          <li><span class="step-number">01</span><h3>Set the rule</h3><p>The owner approves a policy. Raziel compiles supported SpiceDB rules into a form the SP1 program can evaluate.</p></li>
+          <li><span class="step-number">02</span><h3>Prove the grant</h3><p>The prover checks the rule against a committed snapshot of relationships and proves the allowed request. The private evidence stays with the owner.</p></li>
+          <li><span class="step-number">03</span><h3>Check each read</h3><p>A separate verifier checks the proof. The agent reuses its grant, and the gateway checks the signature and scope of each request.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="band evidence" id="demo" aria-labelledby="demo-title">
+      <div class="wrap">
+        <header class="section-heading">
+          <p class="eyebrow">Working prototype</p>
+          <h2 id="demo-title">Two agents. Two ledgers.</h2>
+          <p>One agent reads synthetic payment-processor records. The other checks a bank settlement with a separate grant. They exchange the result, and an audit receipt traces the protected read.</p>
+        </header>
+        <figure class="demo-figure">
+          <video controls playsinline preload="metadata" width="1920" height="1080" poster="assets/demo/reconciliation-receipt.png" aria-label="Raziel reconciliation demo, 2 minutes 35 seconds">
+            <source src="assets/demo/raziel-walkthrough.mp4" type="video/mp4">
+            <a href="assets/demo/raziel-walkthrough.mp4">Open the 2:35 demo video</a>
+          </video>
+          <figcaption>Original walkthrough &middot; 2 min 35 sec</figcaption>
+        </figure>
+        <section class="gallery" data-gallery aria-roledescription="carousel" aria-labelledby="gallery-title">
+          <div class="gallery-heading">
+            <h3 id="gallery-title">Explore the demo screenshots</h3>
+            <button type="button" class="gallery-arrow gallery-rotation" data-gallery-rotation aria-label="Play screenshots" hidden>
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+          <figure data-slide data-title="Synthetic datasets">
+            <a class="screenshot" href="assets/demo/screenshots/screenshot-24.png" target="_blank" rel="noopener" aria-label="Open full screenshot: Synthetic datasets">
+              <img src="assets/demo/screenshots/screenshot-24.png" alt="Synthetic datasets in the Raziel demo" loading="lazy">
+            </a>
+            <figcaption><strong>Synthetic datasets.</strong> The operator prepares and finalises synthetic processor and bank ledgers.</figcaption>
+          </figure>
+          <figure data-slide data-title="Policy builder" hidden>
+            <a class="screenshot" href="assets/demo/screenshots/screenshot-25.png" target="_blank" rel="noopener" aria-label="Open full screenshot: Policy builder">
+              <img src="assets/demo/screenshots/screenshot-25.png" alt="Policy builder in the Raziel demo" loading="lazy">
+            </a>
+            <figcaption><strong>Policy builder.</strong> The operator builds a rule and reviews its compiled policy.</figcaption>
+          </figure>
+          <figure data-slide data-title="Agent registrations" hidden>
+            <a class="screenshot" href="assets/demo/screenshots/screenshot-26.png" target="_blank" rel="noopener" aria-label="Open full screenshot: Agent registrations">
+              <img src="assets/demo/screenshots/screenshot-26.png" alt="Agent registrations in the Raziel demo" loading="lazy">
+            </a>
+            <figcaption><strong>Agent registrations.</strong> The operator manages registered agents and their role assignments.</figcaption>
+          </figure>
+          <figure data-slide data-title="Processor agent" hidden>
+            <a class="screenshot" href="assets/demo/screenshots/screenshot-28.png" target="_blank" rel="noopener" aria-label="Open full screenshot: Processor agent">
+              <img src="assets/demo/screenshots/screenshot-28.png" alt="Processor agent in the Raziel demo" loading="lazy">
+            </a>
+            <figcaption><strong>Processor agent.</strong> Agent A requests a grant to read the processor ledger.</figcaption>
+          </figure>
+          <figure data-slide data-title="Access request review" hidden>
+            <a class="screenshot" href="assets/demo/screenshots/screenshot-29.png" target="_blank" rel="noopener" aria-label="Open full screenshot: Access request review">
+              <img src="assets/demo/screenshots/screenshot-29.png" alt="Access request review in the Raziel demo" loading="lazy">
+            </a>
+            <figcaption><strong>Access request review.</strong> The operator reviews the agent's purpose, scope, and access request.</figcaption>
+          </figure>
+          <figure data-slide data-title="Protected processor read" hidden>
+            <a class="screenshot" href="assets/demo/screenshots/screenshot-30.png" target="_blank" rel="noopener" aria-label="Open full screenshot: Protected processor read">
+              <img src="assets/demo/screenshots/screenshot-30.png" alt="Protected processor read in the Raziel demo" loading="lazy">
+            </a>
+            <figcaption><strong>Protected processor read.</strong> Agent A queries the processor ledger with its grant and sends a settlement lookup.</figcaption>
+          </figure>
+          <figure data-slide data-title="Settlement agent" hidden>
+            <a class="screenshot" href="assets/demo/screenshots/screenshot-31.png" target="_blank" rel="noopener" aria-label="Open full screenshot: Settlement agent">
+              <img src="assets/demo/screenshots/screenshot-31.png" alt="Settlement agent in the Raziel demo" loading="lazy">
+            </a>
+            <figcaption><strong>Settlement agent.</strong> Agent B requests its own grant for the bank ledger.</figcaption>
+          </figure>
+          <figure data-slide data-title="Settlement evidence" hidden>
+            <a class="screenshot" href="assets/demo/screenshots/screenshot-32.png" target="_blank" rel="noopener" aria-label="Open full screenshot: Settlement evidence">
+              <img src="assets/demo/screenshots/screenshot-32.png" alt="Settlement evidence in the Raziel demo" loading="lazy">
+            </a>
+            <figcaption><strong>Settlement evidence.</strong> Agent B reads its authorised rows and returns the settlement result and evidence reference.</figcaption>
+          </figure>
+          <figure data-slide data-title="Reconciliation result" hidden>
+            <a class="screenshot" href="assets/demo/screenshots/screenshot-33.png" target="_blank" rel="noopener" aria-label="Open full screenshot: Reconciliation result">
+              <img src="assets/demo/screenshots/screenshot-33.png" alt="Reconciliation result in the Raziel demo" loading="lazy">
+            </a>
+            <figcaption><strong>Reconciliation result.</strong> Agent A receives the result and displays the evidence receipt.</figcaption>
+          </figure>
+          <figure data-slide data-title="Audit receipts" hidden>
+            <a class="screenshot" href="assets/demo/screenshots/screenshot-27.png" target="_blank" rel="noopener" aria-label="Open full screenshot: Audit receipts">
+              <img src="assets/demo/screenshots/screenshot-27.png" alt="Audit receipts in the Raziel demo" loading="lazy">
+            </a>
+            <figcaption><strong>Audit receipts.</strong> The operator can inspect receipts for the protected requests.</figcaption>
+          </figure>
+          <div class="gallery-controls" data-gallery-controls hidden>
+            <button type="button" class="gallery-arrow" data-gallery-prev aria-label="Previous screenshot" title="Previous screenshot">&#8249;</button>
+            <select data-gallery-picker aria-label="Choose a screenshot"></select>
+            <button type="button" class="gallery-arrow" data-gallery-next aria-label="Next screenshot" title="Next screenshot">&#8250;</button>
+            <span class="gallery-count" data-gallery-count role="status"></span>
+          </div>
+        </section>
+        <dl class="metrics">
+          <div><dt>447 ms</dt><dd>One independent proof check</dd></div>
+          <div><dt>~16 min</dt><dd>One local proof generated</dd></div>
+          <div><dt>8/8</dt><dd>Tampered inputs rejected</dd></div>
+          <div><dt>21/21</dt><dd>Policy test decisions matched SpiceDB</dd></div>
+        </dl>
+        <p class="source">Proving and verification were measured in separate runs. <a href="https://github.com/gitaalekhyapaul/raziel#two-agents-two-ledgers">Read the benchmark records</a>.</p>
+      </div>
+    </section>
+
+    <section class="band partners" id="partnerships" aria-labelledby="partner-title">
+      <div class="wrap partner-grid">
+        <div class="section-heading">
+          <p class="eyebrow">Design partnerships</p>
+          <h2 id="partner-title">What would you let an agent do?</h2>
+          <p>We&rsquo;re looking for teams with a workflow that needs controlled access to sensitive data. Bring one action you&rsquo;d like to delegate and one access rule it must follow.</p>
+        </div>
+        <div>
+          <form class="contact" method="post" action="https://formspree.io/f/mvkkjged" data-contact-form aria-label="Design partnership inquiry" hidden>
+            <div class="fields">
+              <label>Name <input name="name" autocomplete="name" maxlength="100" required></label>
+              <label>Work email <input type="email" name="email" autocomplete="email" maxlength="254" required></label>
+            </div>
+            <label>Organisation <input name="organisation" autocomplete="organization" maxlength="140" required></label>
+            <label>Workflow <textarea name="workflow" rows="4" maxlength="1600" aria-describedby="form-note" required></textarea></label>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" hidden>
+            <p class="form-note" id="form-note">Please leave out confidential data and credentials. We&rsquo;ll use these details to follow up about your inquiry.</p>
+            <button class="button primary" type="submit">Send inquiry</button>
+            <p class="status" data-contact-status role="status" aria-live="polite"></p>
+          </form>
+          <a class="button outline" href="https://www.linkedin.com/in/gitaalekhyapaul" data-contact-fallback>Contact Gita on LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-row">
+      <div>
+        <img src="assets/brand/logo-primary-dark.svg" width="108" height="37" alt="Raziel">
+        <p>Gita Alekhya Paul / NUS FinTech Lab</p>
+      </div>
+      <p>Raziel is the authorisation foundation for <strong>Hypha</strong>, our broader research into data discovery, relevance, and disclosure.</p>
+      <a href="https://github.com/gitaalekhyapaul/raziel">Source on GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>
