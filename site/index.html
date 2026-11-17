@@ -7,7 +7,7 @@
   <meta name="description" content="Raziel gives AI agents proof-backed access to sensitive data for a defined task. A research project at NUS FinTech Lab.">
   <title>Raziel | Agent Authorisation at Superhuman Scale</title>
   <link rel="icon" href="assets/brand/logo-symbol-light.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-v2.css">
   <script src="contact.js" defer></script>
   <script src="gallery.js" defer></script>
 </head>
@@ -34,22 +34,24 @@
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-image" src="assets/demo/processor-console.png" width="1200" height="900" alt="" fetchpriority="high">
-      <div class="wrap hero-copy">
-        <p class="eyebrow">Raziel / NUS FinTech Lab</p>
-        <h1 id="hero-title">Proof-backed access for AI agents</h1>
-        <p class="intro">Let agents work across services. Give each one a grant for the data it needs, backed by proof that the owner&rsquo;s rule was met.</p>
-        <div class="actions">
-          <a class="button primary" href="#explainer">Watch the explainer</a>
-          <a class="button outline" href="#partnerships">Discuss a pilot</a>
-          <a class="hero-research" href="#research">View the research</a>
+      <div class="wrap hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Raziel / NUS FinTech Lab</p>
+          <h1 id="hero-title">Proof-backed access for AI agents</h1>
+          <p class="intro">Let agents work across services. Give each one a grant for the data it needs, backed by proof that the owner&rsquo;s rule was met.</p>
+          <div class="actions">
+            <a class="button primary" href="#explainer">Watch the explainer</a>
+            <a class="button outline" href="#partnerships">Discuss a pilot</a>
+            <a class="hero-research" href="#research">View the research</a>
+          </div>
+          <p class="project-credit">Prof. Jungpil Hahn (Advisor) · Gita Alekhya Paul</p>
         </div>
-        <p class="project-credit">Prof. Jungpil Hahn (Advisor) · Gita Alekhya Paul</p>
+        <img class="hero-image" src="assets/demo/processor-console.png" width="1200" height="900" alt="Raziel processor agent dashboard with a synthetic access request" fetchpriority="high">
       </div>
     </section>
 
     <section class="band explainer" id="explainer" aria-labelledby="explainer-title">
-      <div class="wrap">
+      <div class="wrap explainer-layout">
         <header class="section-heading">
           <h2 id="explainer-title">Why trust is harder to scale for agents</h2>
           <p>In 42 seconds, follow one agent&rsquo;s request and see what a proof adds to Bob&rsquo;s access check.</p>
@@ -213,24 +215,33 @@
         <ul class="research-links">
           <li>
             <a href="assets/research/raziel-final-report.pdf">
-              <div class="research-cover"><img src="assets/research/report-cover.webp" alt="" loading="lazy" width="566" height="800"></div>
-              Final research report <span>PDF</span>
+              <span class="research-cover"><img src="assets/research/report-cover.webp" alt="" loading="lazy" width="566" height="800"></span>
+              <span class="research-info">
+                <strong>Final research report</strong>
+                <small>40 pages · PDF</small>
+                <span class="research-description">The design, related research, and experimental results. The public copy omits the student ID.</span>
+              </span>
             </a>
-            <p>The design, related research, and experimental results. The public copy omits the student ID.</p>
           </li>
           <li>
             <a href="assets/research/raziel-research-poster-a1.pdf">
-              <div class="research-cover"><img src="assets/research/poster-preview.webp" alt="" loading="lazy" width="424" height="600"></div>
-              Research poster <span>A1 PDF</span>
+              <span class="research-cover"><img src="assets/research/poster-preview.webp" alt="" loading="lazy" width="424" height="600"></span>
+              <span class="research-info">
+                <strong>Research poster</strong>
+                <small>A1 · PDF</small>
+                <span class="research-description">The research question, architecture, and two-agent demonstration on one page.</span>
+              </span>
             </a>
-            <p>The research question, architecture, and two-agent demonstration on one page.</p>
           </li>
           <li>
             <a href="assets/research/raziel-partner-research-deck.pdf">
-              <div class="research-cover"><img src="assets/research/deck-cover.webp" alt="" loading="lazy" width="600" height="338"></div>
-              Partner and sponsor deck <span>PDF</span>
+              <span class="research-cover"><img src="assets/research/deck-cover.webp" alt="" loading="lazy" width="600" height="338"></span>
+              <span class="research-info">
+                <strong>Partner and sponsor deck</strong>
+                <small>PDF</small>
+                <span class="research-description">The proof design, experimental results, and proposed partner evaluation.</span>
+              </span>
             </a>
-            <p>The proof design, experimental results, and proposed partner evaluation.</p>
           </li>
         </ul>
       </div>

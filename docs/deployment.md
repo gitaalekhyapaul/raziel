@@ -11,6 +11,9 @@ build the submodules, or require a package manager.
 2. Open [Deploy showcase to GitHub Pages](https://github.com/gitaalekhyapaul/raziel/actions/workflows/pages.yml),
    choose **Run workflow**, and select `main`. The workflow uploads only
    `site/` and does not run on push.
+   When changing the stylesheet, give it a new versioned filename and update
+   the link in `site/index.html`. This keeps cached styles tied to the HTML
+   they were built for.
 3. Check the site at `https://gitaalekhyapaul.github.io/raziel/` before
    attaching the custom domain.
 4. In **Settings > Pages**, add `raziel.gpaul.cc` as the **Custom domain**.
@@ -43,6 +46,7 @@ settings before publication.
 ## Final check
 
 - `https://raziel.gpaul.cc` opens over HTTPS on a phone.
+- Check the homepage and research previews at 1280 × 720 and 1920 × 1080.
 - **Watch the explainer** opens the player below the hero. Confirm the video plays on demand and the transcript expands.
 - **View the research** opens the public report, poster, and partner deck links.
 - **Discuss a pilot** scrolls to the contact section for design partners and sponsors.
