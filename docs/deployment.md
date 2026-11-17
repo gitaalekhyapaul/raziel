@@ -44,7 +44,7 @@ settings before publication.
 
 - `https://raziel.gpaul.cc` opens over HTTPS on a phone.
 - **Watch the explainer** opens the player below the hero. Confirm the video plays on demand and the transcript expands.
-- **View the research** opens the poster and partner deck links.
+- **View the research** opens the public report, poster, and partner deck links.
 - **Discuss a pilot** scrolls to the contact section for design partners and sponsors.
 - The footer links to the archived 29th STePS project listing.
 - The contact form delivers a test inquiry.
