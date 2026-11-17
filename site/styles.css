@@ -86,12 +86,37 @@ h1, h2, h3, dt { font-family: Manrope, system-ui, sans-serif; font-weight: 800; 
 .primary:hover { background-color: #a7f2d6; }
 .outline { color: var(--paper); border-color: #719385; background: #101a17; }
 .outline:hover { border-color: var(--mint); color: var(--mint); }
+.hero-research {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding-inline: .25rem;
+  color: var(--light-text);
+  font-size: .92rem;
+  font-weight: 650;
+}
+.hero-research:hover { color: var(--mint); }
 .project-credit { color: var(--light-text); margin-top: .9rem; font-size: .85rem; }
 
 .band { padding-block: 3.75rem; }
 .section-heading { max-width: 47rem; }
 .section-heading h2 { font-size: 2.55rem; line-height: 1.12; text-wrap: balance; }
 .section-heading > p:last-child { color: var(--muted); margin-top: .85rem; max-width: 41rem; }
+.explainer { background: #edf4f0; border-block: 1px solid var(--line); }
+.explainer-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin-top: 1.3rem;
+  background: var(--night);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.explainer-transcript { margin-top: .6rem; }
+.explainer-transcript summary { width: fit-content; padding-block: .5rem; color: var(--jade); font-weight: 700; cursor: pointer; }
+.explainer-transcript ol { max-width: 46rem; margin: .35rem 0 0; padding-left: 1.3rem; color: var(--muted); }
+.explainer-transcript li + li { margin-top: .55rem; }
 .comparison { margin: 1.5rem 0 1.7rem; }
 .comparison img { width: 100%; }
 .age-proof { background: #edf4f0; padding: clamp(1rem, 3vw, 2rem); margin-bottom: 1.8rem; }
