@@ -86,7 +86,7 @@ h1, h2, h3, dt { font-family: Manrope, system-ui, sans-serif; font-weight: 800; 
 .primary:hover { background-color: #a7f2d6; }
 .outline { color: var(--paper); border-color: #719385; background: #101a17; }
 .outline:hover { border-color: var(--mint); color: var(--mint); }
-.event { color: var(--light-text); margin-top: .8rem; font-size: .83rem; }
+.project-credit { color: var(--light-text); margin-top: .9rem; font-size: .85rem; }
 
 .band { padding-block: 3.75rem; }
 .section-heading { max-width: 47rem; }
@@ -94,6 +94,19 @@ h1, h2, h3, dt { font-family: Manrope, system-ui, sans-serif; font-weight: 800; 
 .section-heading > p:last-child { color: var(--muted); margin-top: .85rem; max-width: 41rem; }
 .comparison { margin: 1.5rem 0 1.7rem; }
 .comparison img { width: 100%; }
+.age-proof { background: #edf4f0; padding: clamp(1rem, 3vw, 2rem); margin-bottom: 1.8rem; }
+.age-proof h3 { font-size: clamp(1.45rem, 3vw, 2rem); line-height: 1.15; }
+.age-comparison img { width: 100%; margin-top: 1rem; }
+.age-comparison figcaption, .research-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.age-comparison figcaption { font-size: .97rem; margin-top: .85rem; }
+.age-comparison figcaption > div { border-top: 1px solid var(--line); padding-top: .65rem; }
+.age-comparison strong { color: var(--jade); }
+.age-mapping { margin-top: 1rem; }
+.research-links { padding: 0; list-style: none; margin: 1.3rem 0 0; }
+.research-links li { border-top: 1px solid var(--line); padding-top: .85rem; }
+.research-links a { font-weight: 750; }
+.research-links a span { color: var(--muted); font-weight: 500; font-size: .8rem; margin-left: .35rem; }
+.research-links p { color: var(--muted); margin-top: .35rem; }
 .steps {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -182,7 +195,7 @@ figcaption, .source { color: var(--muted); font-size: .86rem; margin-top: .5rem;
 .metrics dd { margin-top: .35rem; }
 
 .partner-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: start; gap: 2.5rem; }
-.partners .section-heading > p:last-child { color: var(--light-text); }
+.partners .section-heading > p:not(.eyebrow) { color: var(--light-text); margin-top: .85rem; }
 .partners a.outline { justify-self: start; }
 .contact { display: grid; gap: .75rem; }
 .fields { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
@@ -228,10 +241,11 @@ figcaption, .source { color: var(--muted); font-size: .86rem; margin-top: .5rem;
   .hero::before { background: linear-gradient(180deg, #101a17 45%, #101a17e6 58%, #101a1700 85%); }
   .intro { font-size: 1rem; }
   .actions { margin-top: 1.25rem; }
-  .event { font-size: .8rem; }
+  .project-credit { font-size: .8rem; }
   .band { padding-block: 2.5rem; }
   .section-heading h2 { font-size: 2rem; }
   .steps, .partner-grid, .footer-row { grid-template-columns: 1fr; }
+  .research-links { grid-template-columns: 1fr; }
   .steps, .footer-row { gap: .8rem; }
   .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .metrics div:nth-child(3) { padding-left: 0; border-left: 0; }

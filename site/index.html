@@ -26,6 +26,7 @@
       <nav aria-label="Main navigation">
         <a href="#how">How it works</a>
         <a href="#demo">Demo</a>
+        <a href="#research">Research</a>
         <a href="#partnerships">Discuss a pilot</a>
       </nav>
     </div>
@@ -40,9 +41,9 @@
         <p class="intro">Let agents work across services. Give each one a grant for the data it needs, backed by proof that the owner&rsquo;s rule was met.</p>
         <div class="actions">
           <a class="button primary" href="#partnerships">Discuss a pilot</a>
-          <a class="button outline" href="https://uvents.nus.edu.sg/event/29th-steps/vote">Vote MCOMP-04</a>
+          <a class="button outline" href="#research">View the research</a>
         </div>
-        <p class="event">29th STePS &nbsp;/&nbsp; Select MComp, then Raziel, on UVents.</p>
+        <p class="project-credit">Prof. Jungpil Hahn (Advisor) · Gita Alekhya Paul</p>
       </div>
     </section>
 
@@ -50,12 +51,27 @@
       <div class="wrap">
         <header class="section-heading">
           <p class="eyebrow">The problem</p>
-          <h2 id="why-title">A task is not a grant.</h2>
-          <p>Alice is asked to review a project. Bob&rsquo;s service holds Doc 42, which only assigned reviewers can read. A token can carry a valid signature even when the issuer made the wrong access decision. Raziel lets Bob check that the decision follows the rule.</p>
+          <h2 id="why-title">A wrong grant can carry a correct signature</h2>
+          <p>Alice, an AI agent, requests Doc 42 from Bob&rsquo;s service. The rule requires a reviewer assignment, and Alice has none. An issuer can still sign the wrong grant with its genuine key. With Raziel, Bob requires proof that the approved rule and committed relationship facts permit the read.</p>
         </header>
         <figure class="comparison">
           <img src="assets/diagrams/doc42.svg" alt="For an unassigned agent, an incorrectly issued signed token can pass routine checks. The proof-required service withholds the file." loading="lazy">
         </figure>
+        <section class="age-proof" id="zero-knowledge" aria-labelledby="age-proof-title">
+          <header class="section-heading">
+            <p class="eyebrow">Zero-knowledge proofs</p>
+            <h3 id="age-proof-title">What does the bar learn?</h3>
+            <p>A bar needs to check whether a guest is 18 or over. A zero-knowledge proof lets it check that claim using a trusted ID credential.</p>
+          </header>
+          <figure class="age-comparison">
+            <img src="assets/diagrams/age-proof-comparison.webp" width="2172" height="724" alt="On the left, a guest hands a full ID to the door attendant. On the right, the guest keeps the ID in a private wallet and shows an 18+ proof." loading="lazy">
+            <figcaption>
+              <div><strong>Full ID check</strong><p>The guest shows their ID. The bar sees their name, photo, full birth date, and other printed details.</p></div>
+              <div><strong>Age proof</strong><p>The bar verifies the 18+ claim. The guest keeps the credential and its other details private.</p></div>
+            </figcaption>
+          </figure>
+          <p class="age-mapping">In Raziel, a separate verifier checks that the approved policy allows an exact agent&rsquo;s task and data scope. The data owner keeps the private relationship evidence.</p>
+        </section>
         <ol class="steps">
           <li><span class="step-number">01</span><h3>Set the rule</h3><p>The owner approves a policy. Raziel compiles supported SpiceDB rules into a form the SP1 program can evaluate.</p></li>
           <li><span class="step-number">02</span><h3>Prove the grant</h3><p>The prover checks the rule against a committed snapshot of relationships and proves the allowed request. The private evidence stays with the owner.</p></li>
@@ -162,21 +178,35 @@
       </div>
     </section>
 
+    <section class="band" id="research" aria-labelledby="research-title">
+      <div class="wrap">
+        <header class="section-heading">
+          <h2 id="research-title">Research and project materials</h2>
+          <p>Read how Raziel issues and checks proof-backed grants, what the prototype measured, and which workflows we want to evaluate with partners.</p>
+        </header>
+        <ul class="research-links">
+          <li><a href="assets/research/raziel-research-poster-a1.pdf">Research poster <span>A1 PDF</span></a><p>The research question, architecture, and two-agent demonstration on one page.</p></li>
+          <li><a href="assets/research/raziel-partner-research-deck.pdf">Partner and sponsor deck <span>PDF</span></a><p>The proof design, experimental results, and proposed partner evaluation.</p></li>
+        </ul>
+      </div>
+    </section>
+
     <section class="band partners" id="partnerships" aria-labelledby="partner-title">
       <div class="wrap partner-grid">
         <div class="section-heading">
-          <p class="eyebrow">Design partnerships</p>
-          <h2 id="partner-title">What would you let an agent do?</h2>
-          <p>We&rsquo;re looking for teams with a workflow that needs controlled access to sensitive data. Bring one action you&rsquo;d like to delegate and one access rule it must follow.</p>
+          <p class="eyebrow">Design partners and research sponsors</p>
+          <h2 id="partner-title">Test one restricted workflow with us</h2>
+          <p>Bring an agent, a protected data action, and the rule it must follow. We can define an allowed request and a blocked request together, then test both in a sandbox.</p>
+          <p>Sponsors can support evaluation compute, proof engineering, or specialist review. Use the form to tell us which part of the research you&rsquo;d like to support.</p>
         </div>
         <div>
-          <form class="contact" method="post" action="https://formspree.io/f/mvkkjged" data-contact-form aria-label="Design partnership inquiry" hidden>
+          <form class="contact" method="post" action="https://formspree.io/f/mvkkjged" data-contact-form aria-label="Partnership or sponsorship inquiry" hidden>
             <div class="fields">
               <label>Name <input name="name" autocomplete="name" maxlength="100" required></label>
               <label>Work email <input type="email" name="email" autocomplete="email" maxlength="254" required></label>
             </div>
             <label>Organisation <input name="organisation" autocomplete="organization" maxlength="140" required></label>
-            <label>Workflow <textarea name="workflow" rows="4" maxlength="1600" aria-describedby="form-note" required></textarea></label>
+            <label>Workflow or research interest <textarea name="workflow" rows="4" maxlength="1600" aria-describedby="form-note" required></textarea></label>
             <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" hidden>
             <p class="form-note" id="form-note">Please leave out confidential data and credentials. We&rsquo;ll use these details to follow up about your inquiry.</p>
             <button class="button primary" type="submit">Send inquiry</button>
@@ -192,7 +222,7 @@
     <div class="wrap footer-row">
       <div>
         <img src="assets/brand/logo-primary-dark.svg" width="108" height="37" alt="Raziel">
-        <p>Gita Alekhya Paul / NUS FinTech Lab</p>
+        <p><a href="https://uvents.nus.edu.sg/event/29th-steps/module/MComp/project/4">29th STePS project listing</a></p>
       </div>
       <p>Raziel is the authorisation foundation for <strong>Hypha</strong>, our broader research into data discovery, relevance, and disclosure.</p>
       <a href="https://github.com/gitaalekhyapaul/raziel">Source on GitHub</a>

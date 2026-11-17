@@ -7,7 +7,7 @@
 
 We built Raziel to give AI agents proof-backed access to the data they need for a task. A service can check that a grant follows an approved rule, and the data owner keeps the private relationships that justify it.
 
-**[Explore the project and discuss a pilot](https://raziel.gpaul.cc)** · **[Demo](#two-agents-two-ledgers)** · **[Quickstart](docs/quickstart.md)** · **[Vote MCOMP-04 at 29th STePS](https://uvents.nus.edu.sg/event/29th-steps/vote)**
+**[Explore the project and discuss a pilot](https://raziel.gpaul.cc)** · **[Demo](#two-agents-two-ledgers)** · **[Research materials](https://raziel.gpaul.cc/#research)** · **[Quickstart](docs/quickstart.md)**
 
 ## A task is not a grant
 
@@ -62,4 +62,4 @@ See the [quickstart](docs/quickstart.md) for setup paths and prerequisites. To p
 
 Raziel is the authorisation foundation for **Hypha**, our broader research into data discovery, task relevance, and disclosure controls. At NUS FinTech Lab, we're looking for workflows where agents need to collaborate across teams with scoped access to sensitive data. [Bring us a workflow you'd like to pilot](https://raziel.gpaul.cc/#partnerships).
 
-**At 29th STePS:** [Open official voting](https://uvents.nus.edu.sg/event/29th-steps/vote), select **MComp**, then **Raziel (MCOMP-04)**.
+**29th STePS:** [Raziel project listing (MCOMP-04)](https://uvents.nus.edu.sg/event/29th-steps/module/MComp/project/4).

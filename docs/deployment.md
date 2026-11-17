@@ -43,8 +43,9 @@ settings before publication.
 ## Final check
 
 - `https://raziel.gpaul.cc` opens over HTTPS on a phone.
-- **Vote MCOMP-04** opens the official UVents voting page directly.
-- **Discuss a pilot** scrolls to the contact section.
+- **View the research** opens the poster and partner deck links.
+- **Discuss a pilot** scrolls to the contact section for design partners and sponsors.
+- The footer links to the archived 29th STePS project listing.
 - The contact form delivers a test inquiry.
 - Only the static showcase is served. The component repositories, runtime state,
   and credentials are outside the deployed root.
